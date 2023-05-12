@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <nav className='text-dark '>
+        <nav className='text-dark bg-background '>
           <div className='py-12 px-[100px] flex justify-between'>
             <h1 className=''>ABDULAZEEZ ISHAQ</h1>
             <div className='flex gap-8'>
@@ -29,7 +29,7 @@ export default function RootLayout({
           </div>
         </nav>
         {children}
-        <footer className='text-dark'>
+        <footer className='text-dark bg-background'>
           <div className='border bg-text-gray'></div>
           <div className='px-[100px] py-6 flex justify-between'>
             <div className=''>
