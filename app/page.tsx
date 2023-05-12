@@ -5,12 +5,12 @@ export default function Home() {
     <div className='text-gray px-[100px] py-[271px] bg-background'>
       <div className=''>
         <div className='text-[102px]'>
-          <h1>Product Designer &</h1>
+          <h1>Product Designer and</h1>
           <h1>No-code Developer</h1>
         </div>
         <div className='flex gap-[84px]'>
           <div className='text-[24px]'>
-            <p>Hi there!👋🏽 I'm Abdulazeez , a product designer skilled </p>
+            <p>Hi there! I am Abdulazeez , a product designer skilled </p>
             <p>in user experience and visual design — I strive</p>
             <p>to create intuitive and engaging experiences that</p>
             <p>excites users and businesses.</p>
