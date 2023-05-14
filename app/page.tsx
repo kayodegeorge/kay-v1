@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import StartAProject from './components/StartAProject'
 
 const projects = [
   {
@@ -115,7 +116,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='mb-24 mt-24 lg:mb-52 lg:mt-52'>
+      {/* <section className='mb-24 mt-24 lg:mb-52 lg:mt-52'>
         <h2 className='mx-auto max-w-xl text-center text-5xl leading-tight lg:text-[102px] lg:leading-none'>
           Want to start a project
         </h2>
@@ -142,7 +143,8 @@ export default function Home() {
             </svg>
           </div>
         </div>
-      </section>
+      </section> */}
+      <StartAProject />
     </div>
   )
 }
