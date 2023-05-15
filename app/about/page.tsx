@@ -108,7 +108,7 @@ export default function page() {
         </div>
       </section>
 
-      <section className="pt-8 lg:border-t lg:border-[#D9D9D9] lg:pt-32">
+      <section className="border-t border-[#D9D9D9] pt-8 lg:pt-32">
         <div className="flex flex-col gap-6 lg:flex-row lg:justify-between lg:gap-0">
           <div>
             <h2 className="text-4xl lg:max-w-4xl lg:text-[102px] lg:leading-[96px]">
@@ -128,18 +128,18 @@ export default function page() {
               <span className="uppercase">Download resume</span>
 
               <svg
-                width="17"
-                height="15"
-                viewBox="0 0 17 15"
+                width="15"
+                height="17"
+                viewBox="0 0 15 17"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M0 7.72571C0 7.34601 0.282154 7.03222 0.648229 6.98255L0.75 6.97571L15.75 6.97571C16.1642 6.97571 16.5 7.31149 16.5 7.72571C16.5 8.1054 16.2178 8.4192 15.8518 8.46886L15.75 8.47571L0.75 8.47571C0.335786 8.47571 0 8.13992 0 7.72571Z"
+                  d="M7.27393 0C7.65362 0 7.96742 0.282154 8.01708 0.648229L8.02393 0.75L8.02393 15.75C8.02393 16.1642 7.68814 16.5 7.27393 16.5C6.89423 16.5 6.58043 16.2178 6.53077 15.8518L6.52393 15.75L6.52393 0.75C6.52393 0.335786 6.85971 0 7.27393 0Z"
                   fill="#0F141E"
                 />
                 <path
-                  d="M9.17101 2.23278C8.87749 1.94051 8.87646 1.46564 9.16872 1.17212C9.43442 0.905279 9.85103 0.880177 10.1451 1.0974L10.2294 1.16983L16.2794 7.19383C16.547 7.46032 16.5714 7.87843 16.3524 8.17251L16.2794 8.25673L10.2294 14.2817C9.93593 14.574 9.46105 14.573 9.16877 14.2795C8.90305 14.0127 8.87971 13.596 9.09817 13.3028L9.17096 13.2189L14.687 7.72501L9.17101 2.23278Z"
+                  d="M12.767 9.17101C13.0593 8.87749 13.5342 8.87646 13.8277 9.16872C14.0945 9.43442 14.1196 9.85103 13.9024 10.1451L13.83 10.2294L7.80598 16.2794C7.5395 16.547 7.12138 16.5714 6.82731 16.3524L6.74308 16.2794L0.718085 10.2294C0.425799 9.93593 0.426782 9.46105 0.720281 9.16877C0.987098 8.90305 1.40381 8.87971 1.69697 9.09817L1.78094 9.17096L7.27481 14.687L12.767 9.17101Z"
                   fill="#0F141E"
                 />
               </svg>
@@ -172,7 +172,7 @@ export default function page() {
             <p className="text-2xl leading-[1.2] text-text-gray lg:text-4xl">
               Skills
             </p>
-            <ul className="mt-6 text-2xl">
+            <ul className="mt-6 lg:text-2xl">
               <li>UX design</li>
               <li>Interaction design</li>
               <li>Wireframing</li>
@@ -189,7 +189,7 @@ export default function page() {
             <p className="text-2xl leading-[1.2] text-text-gray lg:text-4xl">
               Tools
             </p>
-            <ul className="mt-6 text-2xl">
+            <ul className="mt-6 lg:text-2xl">
               <li>Figma</li>
               <li>Adobe XD</li>
               <li>Adode Illustrator</li>
@@ -201,6 +201,23 @@ export default function page() {
               <li>Trello</li>
             </ul>
           </div>
+        </div>
+      </section>
+
+      <section className="mt-14 border-y border-[#D9D9D9] pt-14 lg:mt-28">
+        <h2 className="text-4xl lg:max-w-4xl lg:text-[102px] lg:leading-[96px]">
+          Interests
+        </h2>
+
+        <p className="mt-6 max-w-4xl lg:text-2xl">
+          When I’m not designing, I love to do and talk about other things
+          like:​
+        </p>
+
+        <div className="mb-32 mt-32 flex justify-center">
+          <span className="text-6xl lg:text-[128px] lg:leading-[1.2]">
+            Football ⚽️
+          </span>
         </div>
       </section>
     </div>

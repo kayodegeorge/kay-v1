@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const projects = [
   {
@@ -43,7 +44,10 @@ export default function Home() {
           </p>
 
           <div className="flex items-center">
-            <div className="flex w-fit items-center gap-3 rounded-full border border-black py-4 pl-6 pr-7">
+            <Link
+              href="/about"
+              className="flex w-fit items-center gap-3 rounded-full border border-black py-4 pl-6 pr-7"
+            >
               <span className="uppercase">Learn more</span>
 
               <svg
@@ -62,7 +66,7 @@ export default function Home() {
                   fill="#0F141E"
                 />
               </svg>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -88,7 +92,10 @@ export default function Home() {
                 <div className="flex items-center justify-between">
                   <h3 className="text-xl">{project.title}</h3>
 
-                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-black">
+                  <Link
+                    href="/"
+                    className="flex h-8 w-8 items-center justify-center rounded-full bg-black"
+                  >
                     <svg
                       width="17"
                       height="15"
@@ -105,7 +112,7 @@ export default function Home() {
                         fill="#FFFFFF"
                       />
                     </svg>
-                  </span>
+                  </Link>
                 </div>
 
                 <p className="mt-3 text-sm text-[#828282]">
