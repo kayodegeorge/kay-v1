@@ -5,8 +5,8 @@ import Navbar from './components/Navbar'
 import StartAProject from './components/StartAProject'
 
 export const metadata = {
-  title: 'Abdulazeez Portfolio',
-  description: 'Product Designer & No-code Developer',
+  title: 'Abdulazeez | Product Designer & No-code Developer',
+  description: 'Designed by Abdulazeez and Implemented by Kayode',
 }
 
 export default function RootLayout({

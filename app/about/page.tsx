@@ -79,7 +79,7 @@ export default function page() {
       <div className='mt-6'>
         <div className='flex gap-[10px]'>
           <a
-            href=''
+            href='https://twitter.com/azeezmadeit'
             className='flex h-10 w-10 items-center justify-center rounded-full bg-text-dark'
           >
             <svg
@@ -97,7 +97,7 @@ export default function page() {
           </a>
 
           <a
-            href=''
+            href='https://www.linkedin.com/in/abdulazeezishaq'
             className='flex h-10 w-10 items-center justify-center rounded-full bg-text-dark'
           >
             <svg
@@ -115,7 +115,7 @@ export default function page() {
           </a>
 
           <a
-            href=''
+            href='https://dribbble.com/Abdulazeezishaq'
             className='flex h-10 w-10 items-center justify-center rounded-full bg-text-dark'
           >
             <svg
@@ -135,7 +135,7 @@ export default function page() {
           </a>
 
           <a
-            href=''
+            href='https://www.behance.net/abdulazeezishaq'
             className='flex h-10 w-10 items-center justify-center rounded-full bg-text-dark'
           >
             <svg
