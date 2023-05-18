@@ -11,6 +11,8 @@ const Footer = () => {
             <a
               href='https://twitter.com/azeezmadeit'
               className='flex h-10 w-10 items-center justify-center rounded-full bg-text-dark'
+              rel='noopener noreferrer'
+              target='_blank'
             >
               <svg
                 width='18'
@@ -29,6 +31,8 @@ const Footer = () => {
             <a
               href='https://www.linkedin.com/in/abdulazeezishaq'
               className='flex h-10 w-10 items-center justify-center rounded-full bg-text-dark'
+              rel='noopener noreferrer'
+              target='_blank'
             >
               <svg
                 width='18'
@@ -47,6 +51,8 @@ const Footer = () => {
             <a
               href='https://dribbble.com/Abdulazeezishaq'
               className='flex h-10 w-10 items-center justify-center rounded-full bg-text-dark'
+              rel='noopener noreferrer'
+              target='_blank'
             >
               <svg
                 width='16'
@@ -67,6 +73,8 @@ const Footer = () => {
             <a
               href='https://www.behance.net/abdulazeezishaq'
               className='flex h-10 w-10 items-center justify-center rounded-full bg-text-dark'
+              rel='noopener noreferrer'
+              target='_blank'
             >
               <svg
                 width='18'
