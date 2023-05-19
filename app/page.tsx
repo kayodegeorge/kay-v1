@@ -1,5 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+
+import { motion, Variants } from "framer-motion";
 
 const projects = [
   {
@@ -28,22 +32,46 @@ const projects = [
   },
 ];
 
+const container: Variants = {
+  hidden: {},
+  show: {
+    transition: {
+      delayChildren: 0.5,
+      staggerChildren: 0.6,
+      // duration: 0.4,
+      // delay: 0.5,
+    },
+  },
+};
+
+const item: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.56, delay: 0 } },
+};
+
 export default function Home() {
   return (
-    <div className="px-4 lg:px-24">
+    <motion.div
+      variants={container}
+      initial="hidden"
+      animate="show"
+      transition={{ staggerChildren: 0.1 }}
+      className="px-4 lg:px-24"
+    >
       <section className="mt-14 lg:mt-56">
-        <h1 className="text-4xl lg:max-w-4xl lg:text-[102px] lg:leading-[96px]">
+        <motion.h1
+          variants={item}
+          className="text-4xl lg:max-w-4xl lg:text-[102px] lg:leading-[96px]"
+        >
           Product Designer & No-code Developer
-        </h1>
+        </motion.h1>
 
-        <div className="flex flex-col gap-8 lg:flex-row">
+        <motion.div variants={item} className="flex flex-col gap-8 lg:flex-row">
           <p className="mt-6 max-w-lg lg:text-2xl">
             Hi there!👋🏽 I&apos;m Abdulazeez , a product designer skilled in user
             experience and visual design — I strive to create intuitive and
             engaging experiences that excites users and businesses.
           </p>
-
-          <button className=""></button>
 
           <div className="flex items-center">
             <Link
@@ -64,7 +92,7 @@ export default function Home() {
               </svg>
             </Link>
           </div>
-        </div>
+        </motion.div>
       </section>
 
       <section className="mt-24 lg:mt-52">
@@ -119,6 +147,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 }
