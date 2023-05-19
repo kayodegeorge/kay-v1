@@ -9,8 +9,12 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="text-dark">
-      <div className="flex justify-between px-4 py-12 lg:px-[100px]">
+    <nav className="text-dark fixed left-0 top-0 z-[999] w-full">
+      <div
+        className={`left-o fixed top-0 z-50 flex w-full justify-between ${
+          menuOpen ? "bg-text-dark text-text-gray" : "bg-white"
+        } px-4 py-12 transition ease-in-out lg:px-[100px]`}
+      >
         <Link href="/" className="uppercase">
           <span>Abdulazeez Ishaq</span>
         </Link>
@@ -53,63 +57,7 @@ const Navbar = () => {
           className="lg:hidden"
           onClick={() => setMenuOpen((menuOpen) => !menuOpen)}
         >
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="fill-text-dark"
-          >
-            <line x1="2" y1="6" x2="19" y2="6" stroke="black" strokeWidth="2" />
-            <line
-              x1="2"
-              y1="13"
-              x2="19"
-              y2="13"
-              stroke="black"
-              strokeWidth="2"
-            />
-          </svg>
-        </button>
-      </div>
-
-      <div
-        className={`fixed bottom-auto left-0 right-auto top-0 z-50 h-screen w-full bg-text-dark ${
-          menuOpen ? "" : "-translate-x-full"
-        } transition-[transform,opacity]" z-40 duration-[500ms] ease-in-out lg:hidden`}
-      >
-        <div className="flex justify-between bg-text-dark px-4 py-12 text-white lg:px-[100px]">
-          <Link href="/" className="uppercase">
-            <span>Abdulazeez Ishaq</span>
-          </Link>
-
-          <div className="hidden gap-8 lg:flex">
-            <Link href="/work" className="uppercase">
-              work
-            </Link>
-            <Link href="/about" className="uppercase">
-              about
-            </Link>
-            <Link
-              href="https://drive.google.com/file/d/1w5wsr7QSCGXyIkh6-Lo4y4awrQ3vtGyA/view"
-              className="uppercase"
-            >
-              resume
-            </Link>
-            <Link
-              href="mail.google.com/Isiakabdulazeez46@gmail.com"
-              className="uppercase"
-            >
-              contact
-            </Link>
-          </div>
-
-          <button
-            type="button"
-            className="lg:hidden"
-            onClick={() => setMenuOpen((menuOpen) => !menuOpen)}
-          >
+          {menuOpen ? (
             <svg
               width="16"
               height="16"
@@ -131,9 +79,41 @@ const Navbar = () => {
                 strokeLinejoin="round"
               />
             </svg>
-          </button>
-        </div>
+          ) : (
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="fill-text-dark"
+            >
+              <line
+                x1="2"
+                y1="6"
+                x2="19"
+                y2="6"
+                stroke="black"
+                strokeWidth="2"
+              />
+              <line
+                x1="2"
+                y1="13"
+                x2="19"
+                y2="13"
+                stroke="black"
+                strokeWidth="2"
+              />
+            </svg>
+          )}
+        </button>
+      </div>
 
+      <div
+        className={`fixed bottom-auto left-0 right-auto top-[120px] z-10 h-[calc(100vh-120px)] w-full bg-text-dark transition-[transform,opacity]  duration-[500ms] ${
+          menuOpen ? "" : "-translate-y-[calc(100%+120px)]"
+        } ease-in-out lg:hidden`}
+      >
         <div className="mt-20 flex flex-col items-center gap-11 text-4xl uppercase text-white">
           <Link href="/work">work</Link>
           <Link href="/about">about</Link>
