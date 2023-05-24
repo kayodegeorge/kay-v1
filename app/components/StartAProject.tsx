@@ -1,14 +1,14 @@
 export default function StartAProject() {
   return (
     <section className="mb-24 mt-24 lg:mb-52 lg:mt-52">
-      <h2 className="mx-auto max-w-xl text-center text-5xl leading-tight lg:text-[102px] lg:leading-none">
+      <h2 className="mx-auto max-w-[18rem] text-center text-5xl leading-tight lg:max-w-xl lg:text-[102px] lg:leading-none">
         Want to start a project
       </h2>
 
       <div className="mt-8 flex justify-center">
         <a href="mailto:isiakabdulazeez46@gmail.com">
-          <div className="relative flex w-fit items-center gap-3 overflow-hidden rounded-full border border-black py-4 pl-6 pr-7 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-full before:-z-50 before:bg-black before:transition-[top] before:duration-200 before:ease-in before:content-[''] hover:fill-white hover:text-white hover:before:top-0">
-            <span className="uppercase">Let&apos;s talk</span>
+          <div className="relative flex w-fit items-center gap-3 overflow-hidden rounded-full border border-black px-6 py-3 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-full before:-z-50 before:bg-black before:transition-[top] before:duration-200 before:ease-in before:content-[''] hover:fill-white hover:text-white hover:before:top-0">
+            <span className="uppercase leading-[1.2]">Let&apos;s talk</span>
 
             <svg
               width="17"

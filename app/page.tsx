@@ -66,8 +66,11 @@ export default function Home() {
           Product Designer & No-code Developer
         </motion.h1>
 
-        <motion.div variants={item} className="flex flex-col gap-8 lg:flex-row">
-          <p className="mt-6 max-w-lg lg:text-2xl">
+        <motion.div
+          variants={item}
+          className="mt-6 flex flex-col gap-8 lg:mt-12 lg:flex-row lg:gap-[3.75rem]"
+        >
+          <p className="max-w-lg leading-normal lg:text-[1.5rem]">
             Hi there!👋🏽 I&apos;m Abdulazeez , a product designer skilled in user
             experience and visual design — I strive to create intuitive and
             engaging experiences that excites users and businesses.
@@ -76,9 +79,9 @@ export default function Home() {
           <div className="flex items-center">
             <Link
               href="/about"
-              className="relative flex w-fit items-center gap-3 overflow-hidden rounded-full border border-black py-4 pl-6 pr-7 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-full before:-z-50 before:bg-black before:transition-[top] before:duration-200 before:ease-in before:content-[''] hover:fill-white hover:text-white hover:before:top-0"
+              className="relative flex w-fit items-center gap-3 overflow-hidden rounded-full border border-black px-6 py-3 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-full before:-z-50 before:bg-black before:transition-[top] before:duration-200 before:ease-in before:content-[''] hover:fill-white hover:text-white hover:before:top-0"
             >
-              <span className="uppercase">Learn more</span>
+              <span className="uppercase leading-[1.2]">Learn more</span>
 
               <svg
                 width="17"
@@ -95,12 +98,12 @@ export default function Home() {
         </motion.div>
       </section>
 
-      <section className="mt-24 lg:mt-52">
-        <h2 className="text-4xl lg:text-[102px] lg:leading-tight">
+      <section className="mt-24 lg:mt-56">
+        <h2 className="text-4xl leading-[1.2] lg:text-[102px]">
           Selected Projects
         </h2>
 
-        <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-14">
+        <div className="mt-8 grid grid-cols-1 gap-8 lg:mt-16 lg:grid-cols-2 lg:gap-14">
           {projects.map((project) => (
             <div key={project.title}>
               <div className="relative h-80">
@@ -112,9 +115,11 @@ export default function Home() {
                 />
               </div>
 
-              <div className="border border-x border-b p-4">
+              <div className="border border-x border-b p-4 lg:p-8">
                 <div className="flex items-center justify-between">
-                  <h3 className="text-xl">{project.title}</h3>
+                  <h3 className="text-xl leading-[1.2] lg:text-[2rem]">
+                    {project.title}
+                  </h3>
 
                   <Link
                     href="/"
@@ -139,7 +144,7 @@ export default function Home() {
                   </Link>
                 </div>
 
-                <p className="mt-3 text-sm text-[#828282]">
+                <p className="mt-2 text-sm leading-[1.2] text-[#828282] lg:mt-4 lg:text-xl">
                   {project.description}
                 </p>
               </div>

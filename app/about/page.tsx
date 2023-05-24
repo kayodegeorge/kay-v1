@@ -1,10 +1,12 @@
+import Hobbies from "../components/Hobbies";
+
 const roles = [
   { id: "01", role: "UI/UX designer, Brandux" },
   { id: "02", role: "Product designer, Instaclean" },
   { id: "03", role: "Product design tutor, Codar" },
 ];
 
-export default function page() {
+export default function About() {
   return (
     <div className="px-4 lg:px-24">
       <section className="mt-14 lg:mt-[145px]">
@@ -223,9 +225,7 @@ export default function page() {
         </p>
 
         <div className="mb-32 mt-32 flex justify-center">
-          <span className="text-6xl lg:text-[128px] lg:leading-[1.2]">
-            Football ⚽️
-          </span>
+          <Hobbies />
         </div>
       </section>
     </div>
