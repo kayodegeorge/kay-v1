@@ -116,7 +116,9 @@ export default function Home() {
 
               <div className='border border-x border-b p-4'>
                 <div className='flex items-center justify-between'>
-                  <h3 className='text-xl'>{project.title}</h3>
+                  <h3 className='text-[32px] leading-[39px]'>
+                    {project.title}
+                  </h3>
 
                   <Link
                     href='/work/paypen'
@@ -141,7 +143,7 @@ export default function Home() {
                   </Link>
                 </div>
 
-                <p className='mt-3 text-sm text-[#828282]'>
+                <p className='mt-3 text-[20px] leading-6 text-[#828282]'>
                   {project.description}
                 </p>
               </div>
