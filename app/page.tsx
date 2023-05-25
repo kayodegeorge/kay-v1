@@ -67,7 +67,7 @@ export default function Home() {
         </motion.h1>
 
         <motion.div variants={item} className='flex flex-col gap-8 lg:flex-row'>
-          <p className='mt-6 max-w-lg leading-9 lg:text-2xl'>
+          <p className='mt-6 max-w-lg lg:text-2xl'>
             Hi there!👋🏽 I&apos;m Abdulazeez , a product designer skilled in user
             experience and visual design — I strive to create intuitive and
             engaging experiences that excites users and businesses.
@@ -76,7 +76,7 @@ export default function Home() {
           <div className='flex items-center'>
             <Link
               href='/about'
-              className="relative flex w-fit items-center gap-3 overflow-hidden rounded-full border border-black py-4 pl-6 pr-7 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-full before:-z-50 before:border-[#01EBDE] before:bg-[#01EBDE] before:transition-[top] before:duration-200 before:ease-in before:content-[''] hover:fill-white  hover:before:top-0"
+              className="relative flex w-fit items-center gap-3 overflow-hidden rounded-full border border-black py-4 pl-6 pr-7 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-full before:-z-50 before:bg-black before:transition-[top] before:duration-200 before:ease-in before:content-[''] hover:fill-white hover:text-white hover:before:top-0"
             >
               <span className='uppercase'>Learn more</span>
 

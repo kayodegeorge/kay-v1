@@ -22,8 +22,8 @@ const Navbar = () => {
         <div className="hidden gap-8 lg:flex">
           <Link
             href="/work"
-            className={`uppercase ${
-              pathname === "/work" ? "line-through" : ""
+            className={`uppercase hover:underline hover:underline-offset-4 ${
+              pathname === "/work" ? "underline underline-offset-4" : ""
             }`}
           >
             work
@@ -31,8 +31,8 @@ const Navbar = () => {
 
           <Link
             href="/about"
-            className={`uppercase ${
-              pathname === "/about" ? "line-through" : ""
+            className={`uppercase hover:underline hover:underline-offset-4 ${
+              pathname === "/about" ? "underline underline-offset-4" : ""
             }`}
           >
             about
