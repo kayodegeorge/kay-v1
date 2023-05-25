@@ -1,3 +1,5 @@
+'use client'
+import { useCallback, useEffect, useState } from 'react'
 import Hobbies from '../components/Hobbies'
 
 const roles = [
@@ -139,7 +141,10 @@ export default function About() {
               rel='noopener noreferrer'
               target='_blank'
             >
-              <div className="relative flex w-fit items-center gap-3 overflow-hidden rounded-full border border-black py-3 pl-6 pr-7 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-full before:-z-50 before:bg-black before:transition-[top] before:duration-200 before:ease-in before:content-[''] hover:fill-white hover:text-white hover:before:top-0 lg:mt-14">
+              <div
+                className="relative flex w-fit items-center gap-3 overflow-hidden rounded-full border border-black py-3 pl-6 pr-7 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-full before:-z-50 before:bg-bg-lemon
+              before:transition-[top] before:duration-200 before:ease-in before:content-[''] hover:border-bg-lemon hover:fill-black  hover:before:top-0 lg:mt-14"
+              >
                 <span className='uppercase'>Download resume</span>
 
                 <svg
@@ -225,9 +230,7 @@ export default function About() {
         </p>
 
         <div className='mb-32 mt-32 flex justify-center'>
-          <span className='text-6xl lg:text-[128px] lg:leading-[1.2]'>
-            Football ⚽️
-          </span>
+          <Hobbies />
         </div>
       </section>
     </div>

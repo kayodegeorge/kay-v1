@@ -76,7 +76,7 @@ export default function Home() {
           <div className='flex items-center'>
             <Link
               href='/about'
-              className="relative flex w-fit items-center gap-3 overflow-hidden rounded-full border border-black py-4 pl-6 pr-7 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-full before:-z-50 before:bg-black before:transition-[top] before:duration-200 before:ease-in before:content-[''] hover:fill-white hover:text-white hover:before:top-0"
+              className="relative flex w-fit items-center gap-3 overflow-hidden rounded-full border border-black py-4 pl-6 pr-7 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-full before:-z-50 before:bg-bg-lemon before:transition-[top] before:duration-200 before:ease-in before:content-[''] hover:border-bg-lemon hover:fill-black hover:before:top-0"
             >
               <span className='uppercase'>Learn more</span>
 
@@ -103,13 +103,15 @@ export default function Home() {
         <div className='mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-14'>
           {projects.map((project) => (
             <div key={project.title}>
-              <div className='relative h-80'>
-                <Image
-                  alt='Project Images'
-                  src={project.image}
-                  fill
-                  className='object-cover'
-                />
+              <div className='relative h-80 overflow-hidden'>
+                <Link href='/work/paypen'>
+                  <Image
+                    alt='Project Images'
+                    src={project.image}
+                    fill
+                    className='object-cover transition duration-500 ease-in-out hover:scale-110'
+                  />
+                </Link>
               </div>
 
               <div className='border border-x border-b p-4'>
@@ -117,8 +119,8 @@ export default function Home() {
                   <h3 className='text-xl'>{project.title}</h3>
 
                   <Link
-                    href='/'
-                    className='flex h-8 w-8 items-center justify-center rounded-full bg-black'
+                    href='/work/paypen'
+                    className='flex h-8 w-8 items-center justify-center rounded-full bg-black '
                   >
                     <svg
                       width='17'
