@@ -9,11 +9,11 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="text-dark fixed left-0 top-0 z-[999] w-full">
+    <nav className="text-dark w-full">
       <div
-        className={`left-o fixed top-0 z-50 flex w-full justify-between ${
+        className={`flex w-full justify-between ${
           menuOpen ? "bg-text-dark text-text-gray" : "bg-white"
-        } px-4 py-12 transition ease-in-out lg:px-[100px]`}
+        } z-[998] px-4 py-12 transition ease-in-out lg:px-[100px]`}
       >
         <Link href="/" className="uppercase">
           <span>Abdulazeez Ishaq</span>
@@ -110,10 +110,43 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`fixed bottom-auto left-0 right-auto top-[120px] z-10 h-[calc(100vh-120px)] w-full bg-text-dark transition-[transform,opacity]  duration-[500ms] ${
+        className={`fixed bottom-auto left-0 right-auto top-0 z-10 h-full w-full bg-text-dark transition-[transform,opacity] duration-[500ms] ${
           menuOpen ? "" : "-translate-y-[calc(100%+120px)]"
         } ease-in-out lg:hidden`}
       >
+        <div className="flex justify-between px-4 py-12">
+          <Link href="/" className="uppercase text-white ">
+            <span>Abdulazeez Ishaq</span>
+          </Link>
+
+          <button
+            type="button"
+            className="lg:hidden"
+            onClick={() => setMenuOpen((menuOpen) => !menuOpen)}
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="fill-text-dark"
+            >
+              <path
+                d="M14.9964 0.994202L1.00488 14.9857"
+                stroke="#fff"
+                strokeWidth="2"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M15.0003 14.9943L0.99707 0.988159"
+                stroke="#fff"
+                strokeWidth="2"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
         <div className="mt-20 flex flex-col items-center gap-11 text-4xl uppercase text-white">
           <Link href="/work">work</Link>
           <Link href="/about">about</Link>

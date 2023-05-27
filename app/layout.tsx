@@ -19,7 +19,7 @@ export default function RootLayout({
       <body className={neueMontreal.className}>
         <Navbar />
 
-        <div className="pt-[120px]">{children}</div>
+        {children}
 
         <StartAProject />
         <Footer />
