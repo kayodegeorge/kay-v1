@@ -39,7 +39,7 @@ const container: Variants = {
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.8,
+      staggerChildren: 1,
       // duration: 0.4,
       // delay: 0.5,
     },
@@ -47,8 +47,14 @@ const container: Variants = {
 };
 
 const item: Variants = {
-  hidden: { opacity: 0, y: 30 },
-  show: { opacity: 1, y: 0 },
+  hidden: {
+    y: 200,
+    transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.85 },
+  },
+  show: {
+    y: 0,
+    transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.75 },
+  },
 };
 
 export default function Home() {
@@ -58,16 +64,46 @@ export default function Home() {
         variants={container}
         initial="hidden"
         animate="show"
-        className="mt-14 lg:mt-56"
+        className="mt-14 overflow-hidden lg:mt-56"
       >
-        <motion.h1
-          variants={item}
-          className="text-4xl lg:max-w-4xl lg:text-[102px] lg:leading-[96px]"
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="show"
+          className="overflow-hidden"
         >
-          Product Designer & No-code Developer
-        </motion.h1>
+          <motion.h1
+            variants={item}
+            className="text-4xl lg:max-w-4xl lg:text-[102px] lg:leading-[96px]"
+          >
+            Product Designer &
+          </motion.h1>
 
-        <motion.div variants={item} className="flex flex-col gap-8 lg:flex-row">
+          <motion.h1
+            variants={item}
+            className="text-4xl lg:max-w-4xl lg:text-[102px] lg:leading-[96px]"
+          >
+            No-code Developer
+          </motion.h1>
+        </motion.div>
+
+        <motion.div
+          variants={{
+            hidden: {
+              y: 200,
+              transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.85 },
+            },
+            show: {
+              y: 0,
+              transition: {
+                ease: [0.455, 0.03, 0.515, 0.955],
+                duration: 0.75,
+                delay: 2,
+              },
+            },
+          }}
+          className="flex flex-col gap-8 lg:flex-row"
+        >
           <p className="mt-6 max-w-lg lg:text-2xl">
             Hi there!👋🏽 I&apos;m Abdulazeez , a product designer skilled in user
             experience and visual design — I strive to create intuitive and
