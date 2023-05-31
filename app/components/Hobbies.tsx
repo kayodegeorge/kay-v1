@@ -9,6 +9,7 @@ const hobbies = [
   'Travelling ✈️',
   'Music 🎶',
   'Reading 📚',
+  'Video Games 🎮',
 ]
 
 const Hobbies = () => {
