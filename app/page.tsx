@@ -59,7 +59,7 @@ const item: Variants = {
 
 export default function Home() {
   return (
-    <motion.div className='px-4 lg:px-24'>
+    <motion.div className='px-4 lg:px-[100px]'>
       <div className='relative flex'>
         <Image
           alt='Gradient Image'
@@ -73,7 +73,7 @@ export default function Home() {
         variants={container}
         initial='hidden'
         animate='show'
-        className='mt-14 overflow-hidden lg:mt-[270px]'
+        className=' mt-14 overflow-hidden lg:mt-[220px]'
       >
         <motion.div
           variants={container}
@@ -122,7 +122,7 @@ export default function Home() {
           <div className=' flex items-center'>
             <Link
               href='/about'
-              className="relative flex w-fit items-center gap-3 overflow-hidden rounded-full border border-black py-4 pl-6 pr-7 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-full before:-z-50 before:bg-bg-lemon before:transition-[top] before:duration-200 before:ease-in before:content-[''] hover:border-bg-lemon hover:fill-black hover:before:top-0"
+              className="relative flex w-fit items-center gap-3 overflow-hidden rounded-full border border-black px-[24px] py-[14px] before:absolute before:bottom-0 before:left-0 before:right-0 before:top-full before:-z-50 before:bg-bg-lemon before:transition-[top] before:duration-200 before:ease-in before:content-[''] hover:border-bg-lemon hover:fill-black hover:before:top-0"
             >
               <span className='uppercase'>Learn more</span>
 
@@ -141,15 +141,15 @@ export default function Home() {
         </motion.div>
       </motion.section>
 
-      <section className='mt-24 lg:mt-52'>
+      <section className='mt-[200px] lg:mt-52'>
         <h2 className='text-4xl lg:text-[102px] lg:leading-tight'>
           Selected Projects
         </h2>
 
-        <div className='mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-14'>
+        <div className='mt-16 grid grid-cols-1 gap-[32px] lg:grid-cols-2 lg:gap-[52px] '>
           {projects.map((project) => (
             <div key={project.title}>
-              <div className='relative h-80 overflow-hidden'>
+              <div className='relative h-[459px] overflow-hidden'>
                 <Link href='/work/paypen'>
                   <Image
                     alt='Project Images'
@@ -160,7 +160,7 @@ export default function Home() {
                 </Link>
               </div>
 
-              <div className='border border-x border-b p-4'>
+              <div className='w-full border border-x border-b p-8'>
                 <div className='flex items-center justify-between'>
                   <h3 className='text-[32px] leading-[39px]'>
                     {project.title}
