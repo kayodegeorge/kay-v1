@@ -66,7 +66,7 @@ export default function Work() {
           >
             <Link
               href='/work'
-              className='relative block h-80 overflow-hidden lg:order-2 lg:col-span-7 lg:h-[459px]'
+              className='relative block h-80 overflow-hidden lg:order-2 lg:col-span-7 lg:h-[489px]'
             >
               <Image
                 alt='Project Images'

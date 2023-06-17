@@ -9,11 +9,11 @@ const Navbar = () => {
   const pathname = usePathname()
 
   return (
-    <nav className='text-dark fixed left-0 top-0 z-[999] w-full'>
+    <nav className='text-dark left-0 top-0 z-[999] w-full'>
       <div
-        className={`left-o fixed top-0 z-50 flex w-full justify-between ${
+        className={`left-0 top-0 z-50 flex w-full justify-between ${
           menuOpen ? 'bg-text-dark text-text-gray' : 'bg-white'
-        } px-4 py-12 transition ease-in-out lg:px-[100px]`}
+        } px-4 pt-12 transition ease-in-out lg:px-[100px]`}
       >
         <Link href='/' className='uppercase'>
           <span>Abdulazeez Ishaq</span>
