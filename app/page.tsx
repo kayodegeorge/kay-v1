@@ -66,7 +66,7 @@ export default function Home() {
           src='/assets/gradient.svg'
           width={500}
           height={500}
-          className='absolute left-[700px] top-[250px]'
+          className='absolute left-[700px] top-[200px] -z-50'
         />
       </div>
       <motion.section
@@ -168,7 +168,7 @@ export default function Home() {
 
                   <Link
                     href='/work/paypen'
-                    className='flex h-8 w-8 items-center justify-center rounded-full bg-black '
+                    className='flex h-[40px] w-[40px] items-center justify-center rounded-full bg-black px-[8px] py-[6px] '
                   >
                     <svg
                       width='17'
