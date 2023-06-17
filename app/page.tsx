@@ -60,6 +60,15 @@ const item: Variants = {
 export default function Home() {
   return (
     <motion.div className='px-4 lg:px-24'>
+      <div className='relative flex'>
+        <Image
+          alt='Gradient Image'
+          src='/assets/gradient.svg'
+          width={500}
+          height={500}
+          className='absolute left-[700px] top-[250px]'
+        />
+      </div>
       <motion.section
         variants={container}
         initial='hidden'
