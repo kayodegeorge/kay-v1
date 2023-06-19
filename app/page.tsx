@@ -73,7 +73,7 @@ export default function Home() {
         variants={container}
         initial='hidden'
         animate='show'
-        className=' mt-14 overflow-hidden lg:mt-[220px]'
+        className=' mt-[100px] overflow-hidden lg:mt-[220px]'
       >
         <motion.div
           variants={container}
@@ -111,9 +111,9 @@ export default function Home() {
               },
             },
           }}
-          className='flex flex-col gap-[60px] lg:flex-row'
+          className='flex flex-col gap-8 lg:flex-row lg:gap-[60px]'
         >
-          <p className='mt-12 w-[537px] lg:text-2xl'>
+          <p className='mt-[96px] w-[537px] lg:mt-12 lg:text-2xl'>
             Hi there!👋🏽 I&apos;m Abdulazeez , a product designer skilled in user
             experience and visual design — I strive to create intuitive and
             engaging experiences that excites users and businesses.
