@@ -13,10 +13,10 @@ const Navbar = () => {
       <div
         className={`left-0 top-0 z-50 flex w-full justify-between ${
           menuOpen ? 'bg-text-dark text-text-gray' : 'bg-white'
-        } px-4 pt-8 transition ease-in-out lg:px-[100px]`}
+        } px-4 py-8 transition ease-in-out lg:px-[100px]`}
       >
         <Link href='/' className='uppercase'>
-          <span>Abdulazeez Ishaq</span>
+          <span>azeez</span>
         </Link>
 
         <div className='hidden gap-8 lg:flex'>
@@ -41,7 +41,7 @@ const Navbar = () => {
           <a
             href='https://drive.google.com/file/d/1w5wsr7QSCGXyIkh6-Lo4y4awrQ3vtGyA/view'
             className={`uppercase hover:underline hover:underline-offset-4 ${
-              pathname === '/work' ? 'underline underline-offset-4' : ''
+              pathname === '' ? 'underline underline-offset-4' : ''
             }`}
             rel='noopener noreferrer'
             target='_blank'
@@ -52,7 +52,7 @@ const Navbar = () => {
           <a
             href='mailto:isiakabdulazeez46@gmail.com'
             className={`uppercase hover:underline hover:underline-offset-4 ${
-              pathname === '/work' ? 'underline underline-offset-4' : ''
+              pathname === '' ? 'underline underline-offset-4' : ''
             }`}
           >
             contact

@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -101,7 +103,8 @@ export default function Work() {
               <div className='mt-12 lg:mt-0'>
                 <Link
                   href='/work'
-                  className='flex w-fit items-center gap-2 overflow-hidden rounded-full bg-text-dark px-6 py-3 '
+                  className='relative flex w-fit items-center gap-3 overflow-hidden rounded-full border border-black px-[24px] py-[14px] before:absolute before:bottom-0 before:left-0 before:right-0 before:top-full before:-z-50 before:bg-bg-lemon before:transition-[top] before:duration-200  before:ease-in before:content-[""] hover:border-bg-lemon hover:fill-black
+                  hover:before:top-0'
                 >
                   <span className='uppercase text-white'>Read case study</span>
 
