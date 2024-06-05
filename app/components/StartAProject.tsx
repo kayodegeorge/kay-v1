@@ -6,7 +6,7 @@ export default function StartAProject() {
       </h2>
 
       <div className='mt-8 flex justify-center'>
-        <a href='mailto:isiakabdulazeez46@gmail.com'>
+        <a href='mailto:gkayode75@gmail.com'>
           <div
             className="relative flex w-fit items-center gap-3 overflow-hidden rounded-full border border-black px-[24px] py-[14px] before:absolute before:bottom-0 before:left-0 before:right-0 before:top-full before:-z-50 before:bg-bg-lemon before:transition-[top] before:duration-200 before:ease-in before:content-[''] hover:border-bg-lemon 
           hover:fill-black hover:before:top-0"
