@@ -2,7 +2,7 @@ export default function StartAProject() {
   return (
     <section className='mb-24 mt-24 lg:mb-52 lg:mt-52'>
       <h2 className='mx-auto max-w-[18rem] text-center text-5xl leading-tight lg:max-w-xl lg:text-[102px] lg:leading-none'>
-        Want to start a project
+        Want to start a project?
       </h2>
 
       <div className='mt-8 flex justify-center'>

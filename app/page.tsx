@@ -77,7 +77,7 @@ export default function Home() {
             variants={item}
             className='text-4xl lg:max-w-4xl lg:text-[102px] lg:leading-[96px]'
           >
-            Frontend Developer.
+            Frontend Engineer.
           </motion.h1>
 
           {/* <motion.h1
@@ -106,8 +106,8 @@ export default function Home() {
           className='flex flex-col gap-8 lg:flex-row lg:gap-[60px]'
         >
           <p className='mt-[96px] w-[537px] text-[24px] font-light lg:mt-12 lg:text-2xl'>
-            Hi there, i am kayode 👋🏽 front end developer focused on building
-            beautiful web experiences.
+            Hi there, i am kayode 👋🏽 front-end engineer focused on building
+            beautiful web and mobile experiences.
           </p>
 
           <div className=' flex items-center'>

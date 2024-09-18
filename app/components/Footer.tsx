@@ -2,10 +2,8 @@ import Link from 'next/link'
 import {
   AiOutlineTwitter,
   AiFillLinkedin,
-  AiFillDribbbleCircle,
-  AiOutlineBehance,
-  AiFillTwitterCircle,
   AiOutlineMail,
+  AiFillGithub,
 } from 'react-icons/ai'
 const Footer = () => {
   return (
@@ -48,7 +46,7 @@ const Footer = () => {
               rel='noopener noreferrer'
               target='_blank'
             >
-              <AiFillTwitterCircle size={20} />
+              <AiFillGithub size={20} />
             </a>
 
             <a

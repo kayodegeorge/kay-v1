@@ -1,11 +1,8 @@
 'use client'
-import { useCallback, useEffect, useState } from 'react'
 import Hobbies from '../components/Hobbies'
 import {
-  AiFillDribbbleCircle,
+  AiFillGithub,
   AiFillLinkedin,
-  AiFillTwitterCircle,
-  AiOutlineBehance,
   AiOutlineMail,
   AiOutlineTwitter,
 } from 'react-icons/ai'
@@ -33,8 +30,6 @@ export default function About() {
         </p>
 
         <div className='mb-14 mt-6 lg:mb-32'>
-      
-
           <div className=''>
             <div className='flex gap-[10px]'>
               <a
@@ -61,7 +56,7 @@ export default function About() {
                 rel='noopener noreferrer'
                 target='_blank'
               >
-                <AiFillTwitterCircle size={20} />
+                <AiFillGithub size={20} />
               </a>
 
               <a

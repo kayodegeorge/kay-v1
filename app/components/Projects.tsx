@@ -8,7 +8,7 @@ const projects = [
     description: 'A web application for businesses',
     image: '/assets/vollie.jpg',
     tags: ['nextjs', 'tailwind', 'gsap'],
-    url: 'https://website-3czo.onrender.com/',
+    url: 'https://web-app-bay-three.vercel.app/login',
   },
   {
     title: 'Qilo Health',

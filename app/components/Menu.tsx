@@ -1,8 +1,8 @@
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import {
+  AiFillGithub,
   AiFillLinkedin,
-  AiFillTwitterCircle,
   AiOutlineMail,
   AiOutlineTwitter,
 } from 'react-icons/ai'
@@ -54,7 +54,7 @@ const Menu = ({ menuOpen }: Props) => {
               rel='noopener noreferrer'
               target='_blank'
             >
-              <AiFillTwitterCircle size={20} />
+              <AiFillGithub size={20} />
             </a>
 
             <a
