@@ -26,11 +26,11 @@ const projects = [
     url: 'https://henzologistics.com',
   },
   {
-    title: 'Safesave ',
+    title: 'Nook n Craddle ',
     description: 'A savings and investment app that helps you meet your goals',
-    image: '/assets/safesave.jpg',
+    image: '/assets/nook.jpg',
     tags: ['reactjs', 'vite', 'sass'],
-    url: 'https://safesave.money',
+    url: 'https://nookncraddle.com',
   },
 ]
 
