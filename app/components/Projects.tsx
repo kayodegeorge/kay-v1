@@ -27,7 +27,7 @@ const projects = [
   },
   {
     title: 'Nook n Craddle ',
-    description: 'A savings and investment app that helps you meet your goals',
+    description: 'A babysitting site with a scheduling system',
     image: '/assets/nook.jpg',
     tags: ['reactjs', 'vite', 'sass'],
     url: 'https://nookncraddle.com',
