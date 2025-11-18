@@ -44,7 +44,7 @@ const Navbar = () => {
           </Link>
 
           <a
-            href='https://docs.google.com/document/d/1LlnbNJbAwnL437E2co8_Noz6jwxVNPaqcz3vlxvaCX0/edit#heading=h.djx0e3x77gw4'
+            href='https://docs.google.com/document/d/1LlnbNJbAwnL437E2co8_Noz6jwxVNPaqcz3vlxvaCX0/edit?tab=t.0#heading=h.djx0e3x77gw4'
             className={cn(
               "relative overflow-hidden pb-2 uppercase after:absolute after:bottom-1 after:left-0 after:h-0.5 after:w-full after:-translate-x-full after:bg-black after:transition after:duration-300 after:ease-in after:content-[''] after:hover:translate-x-0"
             )}

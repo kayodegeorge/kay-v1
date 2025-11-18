@@ -4,6 +4,13 @@ import React from 'react'
 
 const projects = [
   {
+    title: 'YPM Community',
+    description: 'Delivery at your doorstep',
+    image: '/assets/ypmc.png',
+    tags: ['react', 'react-native', 'expo'],
+    url: 'https://ypmcommunity.com',
+  },
+  {
     title: 'Vollie Finance',
     description: 'A web application for businesses',
     image: '/assets/vollie.jpg',
@@ -18,19 +25,14 @@ const projects = [
     tags: ['nextjs', 'prismic', 'scss'],
     url: 'https://qilo.co',
   },
+
   {
-    title: 'Henzo Logistics',
-    description: 'Delivery at your doorstep',
-    image: '/assets/henzo.jpg',
-    tags: ['vuejs', 'vuetify', 'airtable'],
-    url: 'https://henzologistics.com',
-  },
-  {
-    title: 'Nook n Craddle ',
-    description: 'A babysitting site with a scheduling system',
-    image: '/assets/nook.jpg',
+    title: 'Check my People',
+    description:
+      'An all in one platform to help you verify & confirm that employees are who they say they are',
+    image: '/assets/cmp.png',
     tags: ['reactjs', 'vite', 'sass'],
-    url: 'https://nookncraddle.com',
+    url: 'https://checkmypeople.com',
   },
 ]
 
@@ -44,6 +46,8 @@ export default function Projects() {
         >
           <Link
             href={project.url}
+            target='_blank'
+            rel='noopener noreferrer'
             className='relative block h-80 overflow-hidden lg:order-2 lg:col-span-7 lg:h-[489px]'
           >
             <Image
