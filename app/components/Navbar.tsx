@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import Menu from './Menu'
+import { Menu as MenuIcon, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const Navbar = () => {
@@ -62,6 +63,13 @@ const Navbar = () => {
           >
             contact
           </a>
+        </div>
+
+        <div
+          className='cursor-pointer lg:hidden'
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? <X /> : <MenuIcon />}
         </div>
       </div>
 

@@ -31,7 +31,7 @@ const Menu = ({ menuOpen }: Props) => {
         <div className=''>
           <div className='flex gap-[10px]'>
             <a
-              href='https://twitter.com/thekayodeg'
+              href='https://twitter.com/whereiskayode'
               className='flex h-10 w-10 items-center justify-center rounded-full bg-text-dark text-white hover:bg-bg-lemon hover:text-black'
               rel='noopener noreferrer'
               target='_blank'
