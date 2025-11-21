@@ -11,11 +11,11 @@ const projects = [
     url: 'https://ypmcommunity.com',
   },
   {
-    title: 'Vollie Finance',
-    description: 'A web application for businesses',
-    image: '/assets/vollie.jpg',
-    tags: ['nextjs', 'tailwind', 'gsap'],
-    url: 'https://web-app-bay-three.vercel.app/login',
+    title: 'Borro Finance ',
+    description: 'Borrow cash without selling',
+    image: '/assets/borro.png',
+    tags: ['nextjs', 'tailwind', 'styled-components'],
+    url: 'https://borro.finance',
   },
   {
     title: 'Qilo Health',
@@ -48,13 +48,13 @@ export default function Projects() {
             href={project.url}
             target='_blank'
             rel='noopener noreferrer'
-            className='relative block h-80 overflow-hidden lg:order-2 lg:col-span-7 lg:h-[489px]'
+            className='relative block h-80 overflow-hidden bg-gray-50 lg:order-2 lg:col-span-7 lg:h-[489px]'
           >
             <Image
               alt='Project Images'
               src={project.image}
               fill
-              className='object-cover transition duration-500 ease-in-out hover:scale-110'
+              className='object-contain transition duration-500 ease-in-out'
             />
           </Link>
 
